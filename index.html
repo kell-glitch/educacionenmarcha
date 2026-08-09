@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Educación en Marcha, webdoc interactivo sobre universidad y democracia." />
+  <title>Educación en Marcha</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-main">EDUCACIÓN</span>
+      <span class="brand-accent">EN MARCHA</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#capitulos">Capítulos</a>
+      <a href="#proyecto">Proyecto</a>
+      <a href="#creditos">Créditos</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="sound-button" id="soundBtn" type="button" aria-pressed="false">
+        <span class="sound-icon">🔇</span>
+        <span class="sound-copy">Activar sonido</span>
+      </button>
+
+      <button class="menu-button" id="menuBtn" type="button" aria-label="Abrir menú">
+        MENÚ
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://lh3.googleusercontent.com/d/1pMSdRsenJAoAI3Bd0BxZMG69QXFSmL-w=w2000">
+        <source src="assets/home.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">Webdoc interactivo</span>
+
+        <div class="title-wrap">
+          <h1>
+            <span class="title-white">Educación</span>
+            <span class="title-red">en marcha</span>
+          </h1>
+
+          <p class="central-phrase">
+            Lo que ocurre en la universidad también habla de la
+            <span>democracia</span> de un país.
+          </p>
+
+          <button class="start-button" id="startBtn" type="button">
+            Comenzar el recorrido
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <nav class="chapter-strip" id="capitulos" aria-label="Capítulos del webdoc">
+          <a class="chapter-card" href="#conflicto">
+            <span class="chapter-number">01</span>
+            <strong>Conflicto</strong>
+            <p>Movilizaciones, protestas y voces que se alzan.</p>
+            <span class="chapter-plus">+</span>
+          </a>
+
+          <a class="chapter-card" href="#gobernanza">
+            <span class="chapter-number">02</span>
+            <strong>Gobernanza</strong>
+            <p>¿Quién decide en la universidad?</p>
+            <span class="chapter-plus">+</span>
+          </a>
+
+          <a class="chapter-card" href="#reforma">
+            <span class="chapter-number">03</span>
+            <strong>Reforma</strong>
+            <p>Leyes, políticas y disputas por la calidad educativa.</p>
+            <span class="chapter-plus">+</span>
+          </a>
+
+          <a class="chapter-card" href="#memoria">
+            <span class="chapter-number">04</span>
+            <strong>Memoria</strong>
+            <p>Historias, archivos y luchas que dejaron huella.</p>
+            <span class="chapter-plus">+</span>
+          </a>
+
+          <a class="chapter-card" href="#futuro">
+            <span class="chapter-number">05</span>
+            <strong>Futuro</strong>
+            <p>Desafíos, sueños y propuestas para lo que viene.</p>
+            <span class="chapter-plus">+</span>
+          </a>
+        </nav>
+      </div>
+</section>
+
+
+    <!-- =========================================================
+         CAPÍTULO I · CONFLICTO · V3
+    ========================================================== -->
+    <section id="conflicto" class="conflict-chapter">
+
+      <!-- Apertura del capítulo -->
+      <div class="conflict-opening">
+
+        <div class="conflict-opening-shade" aria-hidden="true"></div>
+
+        <div class="conflict-opening-copy">
+          <span class="chapter-kicker">Capítulo I · Conflicto</span>
+          <h2>Somos estudiantes,<br><em>no somos terroristas</em></h2>
+          <p>Movilizaciones universitarias, tomas de campus y formas de organización estudiantil.</p>
+
+          <button class="chapter-scroll-button" type="button" data-scroll-to="historia-hugo">
+            Comenzar la historia
+            <span aria-hidden="true">↓</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Historia de Hugo -->
+      <section class="hugo-story" id="historia-hugo">
+        <div class="chapter-wrap">
+          <div class="hugo-intro">
+            <span class="mini-label">Hugo · Universitario</span>
+
+            <p class="hugo-lead">
+              La primera vez que vi una toma pensé lo mismo que muchos:
+              <strong>“Otra vez suspendieron las clases”.</strong>
+            </p>
+
+          </div>
+
+          <div class="hugo-experience-grid">
+            <div class="hugo-video-card">
+              <iframe id="hugoVideo" class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1mp-rIu907stgWW7fqVDx6SloBgOhRpUz/preview"></iframe>
+            </div>
+
+            <aside class="reflection-panel" aria-labelledby="reflectionTitle">
+              <span class="mini-label">Reflexiona</span>
+              <h3 id="reflectionTitle">Mientras escuchas a Hugo</h3>
+
+              <ol class="reflection-list">
+                <li>
+                  <span>01</span>
+                  <p>Desde que ingresaste a la universidad, ¿cuántas tomas ha habido? ¿Participaste en alguna?</p>
+                </li>
+
+                <li>
+                  <span>02</span>
+                  <p>¿Sabías por qué se produjo cada toma y qué reclamaban los estudiantes?</p>
+                </li>
+
+                <li>
+                  <span>03</span>
+                  <p>¿Consideras que las tomas perjudicaban tus clases o eran parte de tu desarrollo como universitario?</p>
+                </li>
+              </ol>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cronología interactiva -->
+      <section class="conflict-timeline-section">
+        <div class="chapter-wrap">
+          <div class="section-heading timeline-heading">
+            <div>
+              <span class="mini-label">Línea de tiempo interactiva</span>
+              <h3>Protestas universitarias 2014–2026</h3>
+            </div>
+
+            <p>
+              Selecciona un año para conocer los principales conflictos, demandas y formas de movilización.
+            </p>
+          </div>
+
+          <div class="timeline-track" id="conflictTimeline" aria-label="Cronología 2014 a 2026">
+            <button class="timeline-event active" type="button" data-year="2014"><span class="timeline-dot"></span><strong>2014</strong></button>
+            <button class="timeline-event" type="button" data-year="2015"><span class="timeline-dot"></span><strong>2015</strong></button>
+            <button class="timeline-event" type="button" data-year="2016"><span class="timeline-dot"></span><strong>2016</strong></button>
+            <button class="timeline-event" type="button" data-year="2017"><span class="timeline-dot"></span><strong>2017</strong></button>
+            <button class="timeline-event" type="button" data-year="2018"><span class="timeline-dot"></span><strong>2018</strong></button>
+            <button class="timeline-event" type="button" data-year="2019"><span class="timeline-dot"></span><strong>2019</strong></button>
+            <button class="timeline-event" type="button" data-year="2020"><span class="timeline-dot"></span><strong>2020</strong></button>
+            <button class="timeline-event" type="button" data-year="2021"><span class="timeline-dot"></span><strong>2021</strong></button>
+            <button class="timeline-event" type="button" data-year="2022"><span class="timeline-dot"></span><strong>2022</strong></button>
+            <button class="timeline-event" type="button" data-year="2023"><span class="timeline-dot"></span><strong>2023</strong></button>
+            <button class="timeline-event" type="button" data-year="2024"><span class="timeline-dot"></span><strong>2024</strong></button>
+            <button class="timeline-event" type="button" data-year="2025"><span class="timeline-dot"></span><strong>2025</strong></button>
+            <button class="timeline-event" type="button" data-year="2026"><span class="timeline-dot"></span><strong>2026</strong></button>
+          </div>
+
+          <article class="timeline-detail" id="timelineDetail" aria-live="polite">
+            <div class="timeline-year-column">
+              <span id="timelineYear">2014</span>
+              <small id="timelineAxis">Reforma universitaria</small>
+            </div>
+
+            <div class="timeline-copy-column">
+              <h4 id="timelineTitle">La Ley Universitaria divide a la comunidad académica</h4>
+              <p id="timelineCopy">
+                Marchas y posiciones contrapuestas acompañaron el debate de la Ley Universitaria N.° 30220.
+                Sectores universitarios cuestionaron una posible afectación de la autonomía, mientras otros
+                respaldaron mayores controles de calidad.
+              </p>
+              <p class="timeline-reach">
+                <strong>Universidades / alcance:</strong>
+                <span id="timelineReach">UNMSM, UNI, UNFV y universidades de regiones</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Mural digital -->
+      <section class="digital-wall-section">
+        <div class="chapter-wrap">
+          <div class="section-heading wall-heading">
+            <div>
+              <span class="mini-label">Mural digital</span>
+              <h3>Las protestas también se escriben en carteles</h3>
+            </div>
+            <p>Haz clic en una fotografía para ampliarla.</p>
+          </div>
+
+          <div class="digital-wall" id="digitalWall">
+            <button class="wall-photo wall-photo-1" type="button" data-image="https://lh3.googleusercontent.com/d/1GeWuPr-MNamIsq1Y2ZqUqPHQZ8o5L7_R=w2000">
+              <img src="https://lh3.googleusercontent.com/d/1GeWuPr-MNamIsq1Y2ZqUqPHQZ8o5L7_R=w2000" alt="Ingreso de San Marcos durante una toma estudiantil">
+            </button>
+
+            <button class="wall-photo wall-photo-2" type="button" data-image="https://lh3.googleusercontent.com/d/1Xpj3MT2LMV1BmKD3THzEwvXHitD_cb-_=w2000">
+              <img src="https://lh3.googleusercontent.com/d/1Xpj3MT2LMV1BmKD3THzEwvXHitD_cb-_=w2000" alt="Estudiantes con pancartas contra la criminalización de la protesta">
+            </button>
+
+            <button class="wall-photo wall-photo-3" type="button" data-image="https://lh3.googleusercontent.com/d/1Xpj3MT2LMV1BmKD3THzEwvXHitD_cb-_=w2000">
+              <img src="https://lh3.googleusercontent.com/d/1Xpj3MT2LMV1BmKD3THzEwvXHitD_cb-_=w2000" alt="Movilización de estudiantes en el campus">
+            </button>
+
+            <button class="wall-photo wall-photo-4" type="button" data-image="https://lh3.googleusercontent.com/d/1qkN7OVgt6O5HWCh6VldtMD3ijxOQKtpy=w2000">
+              <img src="https://lh3.googleusercontent.com/d/1qkN7OVgt6O5HWCh6VldtMD3ijxOQKtpy=w2000" alt="Marcha en defensa de la educación">
+            </button>
+
+            <button class="wall-photo wall-photo-5" type="button" data-image="https://lh3.googleusercontent.com/d/1-dPjWu7YxjjoUBmHzQ47Wo-aOIndMcM8=w2000">
+              <img src="https://lh3.googleusercontent.com/d/1-dPjWu7YxjjoUBmHzQ47Wo-aOIndMcM8=w2000" alt="Pancarta que rechaza la estigmatización de estudiantes">
+            </button>
+
+            <button class="wall-photo wall-photo-6" type="button" data-image="https://lh3.googleusercontent.com/d/12H-1SkDizNnMiGScqfPdqvVH_r0DILg2=w2000">
+              <img src="https://lh3.googleusercontent.com/d/12H-1SkDizNnMiGScqfPdqvVH_r0DILg2=w2000" alt="Puerta universitaria durante una toma">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cierre -->
+      <section class="chapter-closing">
+        <div class="chapter-wrap">
+          <span class="mini-label">Pregunta de cierre</span>
+
+          <blockquote>
+            ¿Quiénes participan realmente en las decisiones que definen el futuro de la universidad peruana?
+          </blockquote>
+
+          <a href="#gobernanza" class="next-chapter-link">
+            Continuar a Gobernanza
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <!-- Visor de fotografías -->
+    <div class="wall-lightbox" id="wallLightbox" aria-hidden="true">
+      <button class="wall-lightbox-close" id="wallLightboxClose" type="button" aria-label="Cerrar imagen">×</button>
+      <img id="wallLightboxImage" src="" alt="">
+    </div>
+
+
+    <!-- =========================================================
+         CAPÍTULO II · GOBERNANZA
+    ========================================================== -->
+    <section id="gobernanza" class="c2-governance">
+
+      <section class="c2-opening">
+        <div class="c2-opening-mask"></div>
+        <div class="c2-wrap c2-opening-content">
+          <span>Capítulo II · Gobernanza</span>
+          <h2>No nos representan</h2>
+        </div>
+      </section>
+
+      <section class="c2-video-section">
+        <div class="c2-wrap">
+          <div class="c2-video-layout">
+            <div class="c2-video-frame">
+              <iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1pSnRpgrxi9YK9uOdwUzXX-id8sK2nMq4/preview"></iframe>
+            </div>
+
+            <aside class="c2-reflection">
+              <span class="c2-label">Reflexiona</span>
+
+              <article>
+                <strong>01</strong>
+                <p>¿Te fue fácil familiarizarte con el sistema de gobernanza de la universidad?</p>
+              </article>
+
+              <article>
+                <strong>02</strong>
+                <p>¿Crees que los universitarios se sienten representados por sus autoridades?</p>
+              </article>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="c2-org-section">
+        <div class="c2-wrap">
+          <div class="c2-heading">
+            <span class="c2-label">Organigrama interactivo</span>
+            <h3>¿Cómo se gobierna una universidad?</h3>
+            <p>Comparación básica tomando como referencia la UNMSM y la PUCP.</p>
+          </div>
+
+          <div class="c2-tabs" role="tablist" aria-label="Comparar universidades">
+            <button class="c2-tab active" type="button" data-c2-view="c2-unmsm">UNMSM</button>
+            <button class="c2-tab" type="button" data-c2-view="c2-pucp">PUCP</button>
+          </div>
+
+          <div class="c2-org-view active" id="c2-unmsm">
+            <div class="c2-org-title">
+              <span>Universidad pública</span>
+              <h4>Referencia: UNMSM</h4>
+            </div>
+
+            <div class="c2-chart">
+              <button class="c2-node c2-main" type="button" data-c2-info="Órgano máximo de gobierno universitario.">Asamblea Universitaria</button>
+              <span class="c2-line"></span>
+              <button class="c2-node" type="button" data-c2-info="Órgano de dirección y decisión institucional.">Consejo Universitario</button>
+              <span class="c2-line"></span>
+              <button class="c2-node" type="button" data-c2-info="Máxima autoridad ejecutiva de la universidad.">Rectorado</button>
+              <span class="c2-line"></span>
+
+              <div class="c2-branches">
+                <button class="c2-node" type="button" data-c2-info="Conduce la gestión académica de pregrado.">Vicerrectorado Académico de Pregrado</button>
+                <button class="c2-node" type="button" data-c2-info="Conduce la investigación y el posgrado.">Vicerrectorado de Investigación y Posgrado</button>
+              </div>
+
+              <span class="c2-line"></span>
+              <button class="c2-node" type="button" data-c2-info="Consejos, decanatos, escuelas y unidades académicas.">Facultades</button>
+            </div>
+          </div>
+
+          <div class="c2-org-view" id="c2-pucp">
+            <div class="c2-org-title">
+              <span>Universidad privada</span>
+              <h4>Referencia: PUCP</h4>
+            </div>
+
+            <div class="c2-chart">
+              <button class="c2-node c2-main" type="button" data-c2-info="Figura institucional vinculada con la identidad de la universidad.">Gran Canciller</button>
+              <span class="c2-line"></span>
+              <button class="c2-node" type="button" data-c2-info="Órgano superior de gobierno universitario.">Asamblea Universitaria</button>
+              <span class="c2-line"></span>
+              <button class="c2-node" type="button" data-c2-info="Órgano central de dirección y decisión.">Consejo Universitario</button>
+              <span class="c2-line"></span>
+              <button class="c2-node" type="button" data-c2-info="Máxima autoridad ejecutiva de la universidad.">Rector</button>
+              <span class="c2-line"></span>
+
+              <div class="c2-branches">
+                <button class="c2-node" type="button" data-c2-info="Conduce la política académica.">Vicerrectorado Académico</button>
+                <button class="c2-node" type="button" data-c2-info="Conduce la investigación institucional.">Vicerrectorado de Investigación</button>
+                <button class="c2-node" type="button" data-c2-info="Conduce la gestión administrativa.">Vicerrectorado Administrativo</button>
+              </div>
+
+              <span class="c2-line"></span>
+              <button class="c2-node" type="button" data-c2-info="Facultades, Estudios Generales y Escuela de Posgrado.">Facultades, EEGG y Posgrado</button>
+            </div>
+          </div>
+
+          <div class="c2-info" id="c2Info">
+            Selecciona un bloque para ver una explicación breve.
+          </div>
+
+          <div class="c2-doc-links">
+            <a href="https://cdn.www.gob.pe/uploads/document/file/8892274/7305527-organigrama-2025%282%29.pdf?v=1769719291" target="_blank" rel="noopener">Ver organigrama completo de la UNMSM</a>
+            <a href="https://administrativo.pucp.edu.pe/wp-content/uploads/2019/06/organigrama-nuevo.pdf" target="_blank" rel="noopener">Ver organigrama completo de la PUCP</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="c2-compare">
+        <div class="c2-wrap">
+          <div class="c2-heading c2-heading-dark">
+            <span class="c2-label">Comparativa básica</span>
+            <h3>Dos modelos, una estructura central parecida</h3>
+          </div>
+
+          <div class="c2-compare-grid">
+            <article>
+              <span>UNMSM</span>
+              <h4>Universidad pública</h4>
+              <p>Asamblea Universitaria, Consejo Universitario, Rectorado, vicerrectorados y facultades.</p>
+            </article>
+
+            <article>
+              <span>PUCP</span>
+              <h4>Universidad privada</h4>
+              <p>Gran Canciller, Asamblea Universitaria, Consejo Universitario, Rector, vicerrectorados y facultades.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="c2-close">
+        <div class="c2-wrap">
+          <span class="c2-label">Cierre</span>
+          <blockquote>Conocer la universidad también es entender quién toma las decisiones.</blockquote>
+          <a href="#reforma">Continuar al Capítulo III <span>→</span></a>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- =========================================================
+         CAPÍTULO III · REFORMA
+    ========================================================== -->
+    <section id="reforma" class="c3-reform">
+
+      <!-- Apertura -->
+      <section class="c3-opening">
+        <div class="c3-opening-mask"></div>
+
+        <div class="c3-opening-content">
+          <span>Capítulo III · Reforma</span>
+          <h2>La universidad<br>no es un negocio</h2>
+        </div>
+      </section>
+
+      <!-- Video de Hugo -->
+      <section class="c3-video-section">
+        <div class="c3-wrap">
+          <div class="c3-video-frame">
+            <iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1bKNjUjs4Lkt7BgVdm74330PVWphbROrl/preview"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expediente legislativo -->
+      <section class="c3-dossier">
+        <div class="c3-wrap">
+          <header class="c3-dossier-head">
+            <div>
+              <span class="c3-stamp">Expediente</span>
+              <h3>Principales cambios de la Ley Universitaria</h3>
+            </div>
+
+            <p>Abre cada expediente para conocer qué cambió.</p>
+          </header>
+
+          <div class="c3-files" id="c3Files">
+
+            <article class="c3-file">
+              <button class="c3-file-button" type="button" aria-expanded="false">
+                <span class="c3-year">2017</span>
+                <span class="c3-law">Ley N.° 30697</span>
+                <span class="c3-open-label">Abrir expediente</span>
+              </button>
+
+              <div class="c3-file-detail">
+                <span class="c3-topic">Docencia universitaria</span>
+                <h4>¿Qué cambió?</h4>
+                <p>Modificó el artículo 84 sobre el límite de edad para el ejercicio de la docencia universitaria, flexibilizando la permanencia de docentes mayores de 70 años bajo determinadas condiciones.</p>
+                <a href="https://busquedas.elperuano.pe/dispositivo/NL/1598151-10" target="_blank" rel="noopener">Leer norma</a>
+              </div>
+            </article>
+
+            <article class="c3-file">
+              <button class="c3-file-button" type="button" aria-expanded="false">
+                <span class="c3-year">2019</span>
+                <span class="c3-law">D. U. N.° 034-2019</span>
+                <span class="c3-open-label">Abrir expediente</span>
+              </button>
+
+              <div class="c3-file-detail">
+                <span class="c3-topic">Rectoría del Minedu</span>
+                <h4>¿Qué cambió?</h4>
+                <p>Fortaleció la rectoría del Ministerio de Educación en materia de educación superior universitaria y precisó competencias relacionadas con la Ley N.° 30220.</p>
+                <a href="https://www.gob.pe/institucion/minedu/normas-legales/419661-034-2019" target="_blank" rel="noopener">Leer norma</a>
+              </div>
+            </article>
+
+            <article class="c3-file">
+              <button class="c3-file-button" type="button" aria-expanded="false">
+                <span class="c3-year">2022</span>
+                <span class="c3-law">Ley N.° 31455</span>
+                <span class="c3-open-label">Abrir expediente</span>
+              </button>
+
+              <div class="c3-file-detail">
+                <span class="c3-topic">Régimen académico</span>
+                <h4>¿Qué cambió?</h4>
+                <p>Incorporó las secciones de facultad o escuelas profesionales dentro del régimen académico de las universidades públicas licenciadas.</p>
+                <a href="https://busquedas.elperuano.pe/dispositivo/NL/2059745-1" target="_blank" rel="noopener">Leer norma</a>
+              </div>
+            </article>
+
+            <article class="c3-file">
+              <button class="c3-file-button" type="button" aria-expanded="false">
+                <span class="c3-year">2022</span>
+                <span class="c3-law">Ley N.° 31520</span>
+                <span class="c3-open-label">Abrir expediente</span>
+              </button>
+
+              <div class="c3-file-detail">
+                <span class="c3-topic">SUNEDU</span>
+                <h4>¿Qué cambió?</h4>
+                <p>Modificó diversos artículos sobre la composición del Consejo Directivo de la SUNEDU y el procedimiento para designar a sus integrantes. Fue una de las reformas más debatidas por sus implicancias en la autonomía y supervisión universitaria.</p>
+                <a href="https://www.gob.pe/institucion/sunedu/normas-legales/4628540-31520" target="_blank" rel="noopener">Leer norma</a>
+              </div>
+            </article>
+
+            <article class="c3-file">
+              <button class="c3-file-button" type="button" aria-expanded="false">
+                <span class="c3-year">2024</span>
+                <span class="c3-law">Ley N.° 32105</span>
+                <span class="c3-open-label">Abrir expediente</span>
+              </button>
+
+              <div class="c3-file-detail">
+                <span class="c3-topic">Educación a distancia</span>
+                <h4>¿Qué cambió?</h4>
+                <p>Hizo permanente la modalidad de educación a distancia, estableciendo reglas para la oferta virtual y fortaleciendo la regulación del licenciamiento y supervisión por parte de la SUNEDU.</p>
+                <a href="https://img.lpderecho.pe/wp-content/uploads/2024/08/Ley-32105-LPDerecho.pdf" target="_blank" rel="noopener">Leer norma</a>
+              </div>
+            </article>
+
+            <article class="c3-file">
+              <button class="c3-file-button" type="button" aria-expanded="false">
+                <span class="c3-year">2026</span>
+                <span class="c3-law">Ley N.° 32551</span>
+                <span class="c3-open-label">Abrir expediente</span>
+              </button>
+
+              <div class="c3-file-detail">
+                <span class="c3-topic">Requisitos docentes</span>
+                <h4>¿Qué cambió?</h4>
+                <p>Incorporó una disposición complementaria que permite, de manera excepcional, que docentes nombrados bajo la derogada Ley Universitaria N.° 23733 continúen ejerciendo la docencia sin cumplir algunos de los requisitos de grados académicos exigidos por la Ley N.° 30220.</p>
+                <a href="https://busquedas.elperuano.pe/dispositivo/NL/2475358-2" target="_blank" rel="noopener">Leer norma</a>
+              </div>
+            </article>
+
+            <article class="c3-file">
+              <button class="c3-file-button" type="button" aria-expanded="false">
+                <span class="c3-year">2026</span>
+                <span class="c3-law">Ley N.° 32680</span>
+                <span class="c3-open-label">Abrir expediente</span>
+              </button>
+
+              <div class="c3-file-detail">
+                <span class="c3-topic">Carrera docente</span>
+                <h4>¿Qué cambió?</h4>
+                <p>Incorporó al jefe de práctica como nivel inicial de la carrera docente universitaria, reguló su nombramiento excepcional y modificó las reglas de promoción docente.</p>
+                <a href="https://busquedas.elperuano.pe/dispositivo/NL/2530996-1" target="_blank" rel="noopener">Leer norma</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Transición al mapa -->
+      <section class="c3-map-intro">
+        <div class="c3-wrap">
+          <span>El licenciamiento</span>
+          <h3>Cambió el mapa universitario del Perú</h3>
+        </div>
+      </section>
+
+      <!-- Mapa Flourish -->
+      <section class="c3-map-section">
+        <div class="c3-wrap">
+          <div class="c3-map-head">
+            <span class="c3-stamp">Mapa interactivo</span>
+            <h3>Universidades licenciadas en el Perú</h3>
+            <p>Número de universidades licenciadas por región.</p>
+          </div>
+
+          <div class="c3-map-layout">
+            <div class="c3-map-viewport c3-map-interactive">
+              <div
+                class="flourish-embed flourish-map"
+                data-src="visualisation/29899266"
+                data-height="100%">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                  <img
+                    src="https://public.flourish.studio/visualisation/29899266/thumbnail"
+                    width="100%"
+                    alt="Mapa interactivo de universidades licenciadas">
+                </noscript>
+              </div>
+            </div>
+
+            <aside class="c3-map-legend">
+              <span class="c3-map-legend-title">Lectura del mapa</span>
+
+              <div class="c3-map-legend-scale" aria-hidden="true">
+                <span></span>
+              </div>
+
+              <div class="c3-map-legend-range">
+                <span>Menor concentración</span>
+                <span>Mayor concentración</span>
+              </div>
+
+              <p>
+                El color más intenso representa una mayor cantidad de universidades
+                licenciadas y filiales registradas en la región.
+              </p>
+
+              <div class="c3-map-source">
+                <strong>Fuente</strong>
+                <span>SUNEDU · Visualización en Flourish</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- YachAI -->
+      <section class="c3-yachai">
+        <div class="c3-wrap c3-yachai-grid">
+          <div class="c3-yachai-copy">
+            <span class="c3-stamp">Herramienta del webdoc</span>
+            <h3>¿No entiendes una norma?</h3>
+            <p>
+              YachAI explica documentos normativos en un lenguaje más claro y accesible.
+            </p>
+          </div>
+
+          <div class="c3-yachai-panel c3-yachai-simple">
+            <div class="c3-terminal-top">
+              <strong>YachAI</strong>
+              <span>Asistente normativo</span>
+            </div>
+
+            <p class="c3-yachai-instruction">
+              Puedes consultar sobre la Ley Universitaria, la SUNEDU,
+              el licenciamiento o la autonomía universitaria.
+            </p>
+
+            <div class="c3-example-list" aria-label="Ejemplos de consulta">
+              <span>Ley N.° 30220</span>
+              <span>SUNEDU</span>
+              <span>Licenciamiento</span>
+              <span>Autonomía universitaria</span>
+            </div>
+
+            <a
+              class="c3-yachai-main-link"
+              href="https://gemini.google.com/gem/03a9ba269e4e"
+              target="_blank"
+              rel="noopener">
+              Abrir YachAI
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Botón flotante de YachAI -->
+      <a
+        class="c3-yachai-float"
+        href="https://gemini.google.com/gem/03a9ba269e4e"
+        target="_blank"
+        rel="noopener"
+        aria-label="Abrir YachAI, asistente normativo">
+        <span class="c3-yachai-float-icon">Y</span>
+        <span class="c3-yachai-float-copy">
+          <strong>YachAI</strong>
+          <small>Consulta una norma</small>
+        </span>
+      </a>
+
+      <!-- Cierre -->
+      <section class="c3-close">
+        <div class="c3-wrap">
+          <blockquote>
+            Las leyes pueden cambiar.<br>
+            Lo que permanece es la universidad que somos capaces de construir.
+          </blockquote>
+
+          <a href="#memoria">
+            Continuar al Capítulo IV
+            <span>→</span>
+          </a>
+        </div>
+      </section>
+
+    </section>
+
+
+    <!-- =========================================================
+         CAPÍTULO IV · MEMORIA
+    ========================================================== -->
+    <section id="memoria" class="memoria-v7">
+<section class="m7-hero"><div class="m7-bg" style="background-image:url('https://lh3.googleusercontent.com/d/1umK0Wzypfq2vW9gvZp5bbVIog4Pf2dUo=w2000')"></div><div class="m7-shade"></div><div class="m7-wrap m7-copy"><span>Capítulo IV · Memoria</span><h2>Estudiar y luchar<br>es deber estudiantil</h2><p>La memoria universitaria no permanece inmóvil: se escucha, se mira y se transmite.</p></div></section>
+<section class="m7-hugo"><div class="m7-wrap"><span class="m7-kicker">Una historia que continúa</span><div class="m7-hugo-grid"><div><blockquote>“Antes de nosotros hubo otros estudiantes.”</blockquote><p>También caminaron estos pasillos. También discutieron. También marcharon. Muchos defendieron derechos que hoy damos por sentados.</p></div><div class="m7-frame"><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1GQ2L9_-apXjP79mFCQ1NU-GFwHoqwrfE/preview"></iframe></div></div></div></section>
+<section class="m7-archive"><div class="m7-wrap"><span class="m7-kicker">Archivo vivo</span><h3>La universidad también se recuerda con imágenes</h3><p class="m7-lead">Pasillos, asambleas, pancartas y movilizaciones forman un archivo colectivo donde distintas generaciones vuelven a encontrarse.</p><div class="m7-collage"><figure class="wide"><img src="https://lh3.googleusercontent.com/d/1I34Vk6eUfZgcfqqdbiXbCVU204U86p2C=w2000"></figure><figure><img src="https://lh3.googleusercontent.com/d/1-3ywzt7HDVEs5OVObX4-4YsxD-YjpjlH=w2000"></figure><figure><img src="https://lh3.googleusercontent.com/d/1UH6sOFIEoewEslJbxPyqhb7G-r7S44Ip=w2000"></figure><figure class="wide"><img src="https://lh3.googleusercontent.com/d/1ixTCkSYutCpxss92OsQR25ZlXUSidDUg=w2000"></figure><figure><img src="https://lh3.googleusercontent.com/d/1vl7zjG30v5isVhqjc2EfR3R0aChTSYLn=w2000"></figure><figure><img src="https://lh3.googleusercontent.com/d/1LmrefJtWPG3iTMzPmIujLbfaojHQl0Gd=w2000"></figure></div><button id="m7Open" class="m7-btn">Explorar archivo fotográfico · 18 imágenes</button></div></section>
+<div id="m7Gallery" class="m7-modal"> <button id="m7Close" class="m7-close">×</button><div class="m7-gallery"><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1I34Vk6eUfZgcfqqdbiXbCVU204U86p2C=w2000" alt="Archivo universitario 01"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1-3ywzt7HDVEs5OVObX4-4YsxD-YjpjlH=w2000" alt="Archivo universitario 02"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1z8rNxuuV3D1lPP7rAnhp2VjJC69vr7DO=w2000" alt="Archivo universitario 03"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1rPcR9lVenljZtd5FxmYGGFO2EXacXFYU=w2000" alt="Archivo universitario 04"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1UH6sOFIEoewEslJbxPyqhb7G-r7S44Ip=w2000" alt="Archivo universitario 05"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1fKKQBiVOAx905xfuPXzY00ar5v9GA_q0=w2000" alt="Archivo universitario 06"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1ixTCkSYutCpxss92OsQR25ZlXUSidDUg=w2000" alt="Archivo universitario 07"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1vl7zjG30v5isVhqjc2EfR3R0aChTSYLn=w2000" alt="Archivo universitario 08"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1GfQ6-3n5zwZfMsZBrXPGhFcsBCbZP23p=w2000" alt="Archivo universitario 09"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1fb70kjOYMRvvnY331JbFwqik25brb7cL=w2000" alt="Archivo universitario 10"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1DtC8apG23vHavTJ5DHrexgDDA9--LJEq=w2000" alt="Archivo universitario 11"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1ygAhvctgcG61xNFKPBk6PuXpfE2jB-ui=w2000" alt="Archivo universitario 12"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1XynxfUjIn8GYjYSryMiMXwTcxHlgkKUu=w2000" alt="Archivo universitario 13"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1N2kTi13HrpUSK2DEj8ATxFHKWltdBOCA=w2000" alt="Archivo universitario 14"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1GZ5h2dgFjrALcXyoQWwpU74Bbpv8Pp59=w2000" alt="Archivo universitario 15"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1LmrefJtWPG3iTMzPmIujLbfaojHQl0Gd=w2000" alt="Archivo universitario 16"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1v1mRLidw_qpAi1FmhNm3IMZYAErrcERg=w2000" alt="Archivo universitario 17"></figure><figure><img loading="lazy" src="https://lh3.googleusercontent.com/d/1umK0Wzypfq2vW9gvZp5bbVIog4Pf2dUo=w2000" alt="Archivo universitario 18"></figure></div></div>
+<section class="m7-sound"><div class="m7-wrap"><span class="m7-kicker">Archivo sonoro del conflicto</span><h3>Hay memorias que primero fueron voz</h3><p class="m7-lead">Discursos, consignas y registros de movilización permiten volver a escuchar el conflicto universitario.</p><div class="m7-audios"><article><span>01</span><h4>Archivo sonoro 01</h4><iframe class="drive-preview-audio" allow="autoplay" loading="lazy" src="https://drive.google.com/file/d/16AGKhqQnUgyIF6wvUK6v66AlF8Jx5Dcv/preview"></iframe></article><article><span>02</span><h4>Archivo sonoro 02</h4><iframe class="drive-preview-audio" allow="autoplay" loading="lazy" src="https://drive.google.com/file/d/1Yz3iV9MAs16jESLuBCb0QyorsHqCcl7O/preview"></iframe></article><article><span>03</span><h4>Archivo sonoro 03</h4><iframe class="drive-preview-audio" allow="autoplay" loading="lazy" src="https://drive.google.com/file/d/1WdpGxTltzHWLy1mK6GS2kasuiq7SmQrh/preview"></iframe></article><article><span>04</span><h4>Archivo sonoro 04</h4><iframe class="drive-preview-audio" allow="autoplay" loading="lazy" src="https://drive.google.com/file/d/1JcqF8p0-1rqp9GL1TT7bWHKTXOU8KLZ7/preview"></iframe></article><article><span>05</span><h4>Archivo sonoro 05</h4><iframe class="drive-preview-audio" allow="autoplay" loading="lazy" src="https://drive.google.com/file/d/19Kp0YvBJ5XPOjutb8FBUuXK-s83lNQcc/preview"></iframe></article><article><span>06</span><h4>Archivo sonoro 06</h4><iframe class="drive-preview-audio" allow="autoplay" loading="lazy" src="https://drive.google.com/file/d/1nvNpy1i6T3iKiEB4-dmz37bIuVRyBYei/preview"></iframe></article><article><span>07</span><h4>Archivo sonoro 07</h4><iframe class="drive-preview-audio" allow="autoplay" loading="lazy" src="https://drive.google.com/file/d/1GykIMMfeS7Wx9BPXjNsN77fPuXMAbfZf/preview"></iframe></article><article><span>08</span><h4>Archivo sonoro 08</h4><iframe class="drive-preview-audio" allow="autoplay" loading="lazy" src="https://drive.google.com/file/d/1aBOpRqNQUtFm_RstSpy4iRpEIZmtqNkR/preview"></iframe></article></div></div></section>
+<section class="m7-clips"><div class="m7-wrap"><span class="m7-kicker">Diario del campus</span><h3>Una memoria en movimiento.</h3><p class="m7-lead">Los clips conectan escenas de movilización, protesta y vida universitaria con el presente del campus.</p><div class="m7-videos"><article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1hOS4TENvgd_yV-1r5nodPabK6ps0L9Yh/preview"></iframe><span>Registro 01</span></article><article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1jA7IAQU__RRByFzRIBHFB9z9rG4v8vEj/preview"></iframe><span>Registro 02</span></article><article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1j-EztK8Ylt9cwL5ynmuC3QjKAOw1JGsm/preview"></iframe><span>Registro 03</span></article><article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1mu-riFlAdMxzFOBC5IACVronLyoST9L7/preview"></iframe><span>Registro 04</span></article><article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1tjFUHE2ARw61ClUTJYSG1Fqg1ZciiJQF/preview"></iframe><span>Registro 05</span></article><article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/140Wx3bGpngeF6LuQbWOgm7Dtmy5WqXqe/preview"></iframe><span>Registro 06</span></article></div></div></section>
+<section class="m7-end"><div class="m7-bg" style="background-image:url('https://lh3.googleusercontent.com/d/1ygAhvctgcG61xNFKPBk6PuXpfE2jB-ui=w2000')"></div><div class="m7-shade"></div><blockquote>“Entonces entendí que pertenecer a una universidad también significa hacerse responsable de su historia.”</blockquote></section>
+</section>
+<section id="futuro" class="c5-future">
+      <section class="c5-opening">
+        <div class="c5-grid"></div>
+        <div class="c5-wrap c5-opening-content">
+          <span>Capítulo V · Futuro</span>
+          <h2>Sin estudiantes<br>no hay futuro universitario</h2>
+        </div>
+      </section>
+
+      <section class="c5-video">
+        <div class="c5-wrap">
+          <div class="c5-video-frame">
+            <iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1GQ2L9_-apXjP79mFCQ1NU-GFwHoqwrfE/preview"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="c5-thought">
+        <div class="c5-wrap">
+          <p>Toda universidad es una decisión colectiva.</p>
+          <strong>El futuro no está escrito. Se construye.</strong>
+        </div>
+      </section>
+
+      <section class="c5-testimonies">
+        <div class="c5-wrap">
+          <span class="c5-kicker">Voces universitarias</span>
+          <div class="c5-testimony-head">
+            <h3>¿Qué universidad quieren los estudiantes?</h3>
+            <p>Cuatro voces imaginan la universidad que viene.</p>
+          </div>
+          <div class="c5-testimony-grid">
+            <article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1JmqR2Ee7LDd3Nw_a9rXD_-kooEUk247o/preview"></iframe><span>Testimonio 01</span></article>
+            <article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/14MclYQWd0VweNn6pfU9_OpALP32PPAJO/preview"></iframe><span>Testimonio 02</span></article>
+            <article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1eHsurTIgh2W79v3-pTdrGZIzYi6ica7y/preview"></iframe><span>Testimonio 03</span></article>
+            <article><iframe class="drive-preview-video" allow="autoplay; fullscreen" allowfullscreen loading="lazy" src="https://drive.google.com/file/d/1Q6OcejS6Wkmq-eZlEQqNRIb-mRMF8why/preview"></iframe><span>Testimonio 04</span></article>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="c5-wall-section" id="muro-ciudadano">
+        <div class="c5-wrap">
+          <div class="eem-wall-layout">
+            <div class="eem-wall-head">
+              <div>
+                <span class="c5-kicker">Muro ciudadano · voces del futuro</span>
+                <h3>¿Qué universidad<br>queremos construir?</h3>
+                <p class="c5-intro">Comparte una reflexión. Tu voz forma parte de <strong>Educación en Marcha</strong> y se suma de inmediato a este mural.</p>
+                <div class="eem-wall-stats">
+                  <div><b id="eemWallTotalNumber">20</b><span>voces visibles en este mural</span></div>
+                  <div><b id="eemWallUserNumber">0</b><span>reflexiones publicadas desde este navegador</span></div>
+                </div>
+              </div>
+            </div>
+            <form id="eemWallForm" class="eem-wall-form" autocomplete="off">
+              <div class="eem-wall-form-title">✎ Comparte tu reflexión</div>
+              <div class="eem-wall-fields">
+                <label>Nombre <small>(opcional)</small><input id="eemWallName" type="text" maxlength="60" placeholder="Tu nombre"></label>
+                <label>Universidad <small>(opcional)</small><input id="eemWallUni" type="text" maxlength="70" placeholder="Ejemplo: UNMSM"></label>
+              </div>
+              <label class="eem-wall-message">Tu reflexión<textarea id="eemWallText" maxlength="240" rows="4" placeholder="La universidad que quiero es una universidad que…" required></textarea><span><b id="eemWallCount">0</b>/240 caracteres</span></label>
+              <div class="eem-wall-actions"><p>Publicación inmediata. Tu reflexión aparecerá al instante en este mural y quedará guardada en este navegador.</p><button type="submit">Publicar mi reflexión <span>↗</span></button></div>
+              <div id="eemWallStatus" class="eem-wall-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+          <div class="eem-wall-meta"><span>VOCES DEL MURO</span><span id="eemWallPosition">Muro ciudadano · Educación en Marcha</span></div>
+          <div id="c5Wall" class="c5-wall eem-wall-grid"><article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Una universidad donde participar también signifique ser escuchado.</p><footer><b>Estudiante universitario</b><small>UNFV</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Más investigación, inclusión y acceso abierto al conocimiento.</p><footer><b>Comunidad universitaria</b><small>PUCP</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Que la tecnología acompañe a las personas y no las deje atrás.</p><footer><b>Estudiante</b><small>UNI</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Menos burocracia, más diálogo y más participación.</p><footer><b>Mariana</b><small>UNMSM</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Una universidad crítica, plural y comprometida con su tiempo.</p><footer><b>Luis</b><small>UNFV</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Formar para transformar, no solo para competir.</p><footer><b>Andrea</b><small>UNALM</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Que no tengamos miedo de cuestionarlo todo.</p><footer><b>Carlos</b><small>PUCP</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Una universidad que abrace las diferencias.</p><footer><b>Valeria</b><small>UNMSM</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Más espacios culturales, deportivos y de bienestar.</p><footer><b>Diego</b><small>UPC</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Conectada con los problemas reales del país.</p><footer><b>Lucía</b><small>UNSA</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Educación pública de calidad para un país más justo.</p><footer><b>Pedro</b><small>UNC</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Más becas y menos barreras económicas.</p><footer><b>Nicole</b><small>UNPRG</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Un espacio seguro, respetuoso e inclusivo.</p><footer><b>Daniela</b><small>UNSAAC</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Docentes con vocación y estudiantes con voz.</p><footer><b>Ricardo</b><small>UPN</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Investigación con ética e impacto social.</p><footer><b>Gabriela</b><small>UNMSM</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Una universidad que dialogue con su entorno.</p><footer><b>Sofía</b><small>UNFV</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Educar para pensar, sentir y actuar responsablemente.</p><footer><b>María</b><small>USMP</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Que nadie quede fuera por ser diferente.</p><footer><b>Bruno</b><small>UNAMAD</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>Más participación estudiantil en las decisiones.</p><footer><b>Alondra</b><small>UNICA</small></footer></article>
+<article class="c5-note eem-note seed"><span class="eem-quote">“</span><p>La universidad es un bien público para la sociedad.</p><footer><b>Cristian</b><small>PUCP</small></footer></article></div>
+          
+          <span id="eemWallTotal" hidden>20 reflexiones</span>
+        </div>
+      </section>
+
+<section class="c5-ending">
+        <div class="c5-question"><p>¿Quién decide el futuro de la universidad?</p></div>
+        <div class="c5-question"><p>¿Qué significa realmente participar?</p></div>
+        <div class="c5-question"><p>¿Qué universidad queremos construir?</p></div>
+        <div class="c5-final"><p>La universidad también se construye luchando.</p></div>
+      </section>
+    </section>
+
+
+    <!-- =========================================================
+         SOBRE EL PROYECTO
+    ========================================================== -->
+    <section id="proyecto" class="about-project">
+      <div class="about-project-rule"></div>
+
+      <div class="about-project-wrap">
+        <span class="about-project-kicker">Sobre el proyecto</span>
+
+        <div class="about-project-grid">
+          <h2>Educación<br>en Marcha</h2>
+
+          <div class="about-project-copy">
+            <p>
+              <strong>Educación en Marcha</strong> es un documental interactivo que explora
+              los cambios, conflictos y desafíos que han marcado a la universidad peruana
+              en los últimos años.
+            </p>
+
+            <p>
+              A través de testimonios, archivos, entrevistas y recursos interactivos,
+              recorremos las reformas universitarias, las disputas por la gobernanza,
+              la participación estudiantil y las memorias que han acompañado la
+              transformación de la educación superior en el Perú.
+            </p>
+
+            <p>
+              Porque la universidad no solo se construye en las aulas. También se
+              transforma con las decisiones que se toman, las voces que participan
+              y las preguntas que hacemos sobre su futuro.
+            </p>
+          </div>
+        </div>
+
+        <blockquote>
+          Educación en Marcha te invita a conocer, explorar y reflexionar:
+          <strong>¿qué universidad queremos construir?</strong>
+        </blockquote>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         CRÉDITOS
+    ========================================================== -->
+    <section id="creditos" class="credits-section">
+      <div class="credits-wrap">
+
+        <header class="credits-head">
+          <span>Créditos</span>
+          <h2>Educación en Marcha</h2>
+        </header>
+
+        <div class="credits-team">
+          <span class="credits-label">Equipo realizador</span>
+
+          <article>
+            <h3>Naiara Maite Gonzales Ballón</h3>
+            <p>Dirección General y Producción Ejecutiva</p>
+          </article>
+
+          <article>
+            <h3>Kelly Cárdenas Ortega</h3>
+            <p>Coordinación de Desarrollo Web y UX</p>
+          </article>
+
+          <article>
+            <h3>Irene Katherine Fernández León</h3>
+            <p>Coordinación de Narrativa Transmedia</p>
+          </article>
+
+          <article>
+            <h3>Hanz Hugo Pretel Anco</h3>
+            <p>Coordinación de Producción Multimedia</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    
+<footer class="v9-footer" id="contacto">
+  <div class="v9-footer-inner">
+    <div class="v9-footer-brand">
+      <strong>Educación en Marcha © 2026</strong>
+      <span>UNMSM · Facultad de Letras y Ciencias Humanas</span>
+      <span>ODS 4 · Educación de calidad</span>
+    </div>
+    <div class="v9-footer-contact">
+      <span class="v9-footer-label">La conversación continúa</span>
+      <div class="v11-social-row">
+        <a href="https://www.instagram.com/educacionenmarcha.unmsm/" target="_blank" rel="noopener"><b>IG</b><span>Instagram</span></a>
+        <a href="https://www.facebook.com/EducacionEnMarchaPeru/" target="_blank" rel="noopener"><b>f</b><span>Facebook</span></a>
+        <a href="https://www.tiktok.com/@educacionenmarcha?_r=1&_t=ZS-98ixtU5vv8h" target="_blank" rel="noopener"><b>♪</b><span>TikTok</span></a>
+        <a href="https://soundcloud.com/educacion-en-marcha" target="_blank" rel="noopener"><b>☁</b><span>SoundCloud</span></a>
+      </div>
+      <a class="v9-footer-email" href="mailto:educacionenmarcha.unmsm@gmail.com">educacionenmarcha.unmsm@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+
+  </main>
+
+  <script>
+    // Configuración única del Muro Ciudadano automático.
+    // Después de desplegar Apps Script, pega aquí la URL terminada en /exec.
+    window.MURO_BACKEND_URL = "";
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
